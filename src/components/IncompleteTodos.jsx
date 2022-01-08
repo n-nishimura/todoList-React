@@ -1,13 +1,13 @@
 import React from "react"
 
 export const IncompleteTodos = (props) => {
-  const {}
+  const {todos,onClickDelete,onClickComp} = props;
   return (
     <div className="incomplete-area">
         <p className="title">未完了のTODO</p>
         <ul>
           {/* mapの引数の2つ目はインデックス番号が入ってくる */}
-          {incomTodos.map((todo,index)=>{
+          {todos.map((todo,index)=>{
             return(
               <div key ={ todo }className="list-row">
                 <li>{todo}</li>
